@@ -2,14 +2,22 @@ body {
   font-family: Fagun, Sans-serif;
   font-weight: 300;
   background-color: #F5F0E6;
-  color: white;
+  color: #252525;
 }
+
+.landingpage1 {
+  background-color:#252525;
+  height: 90vh;
+  color: white;
+  }
+
 *{
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  
 }
 /* Nav bar*/
 .logo {
@@ -20,11 +28,12 @@ body {
 
 nav li {
 float: right;
-margin-right: 1rem; 
+margin-right: 1rem;
 }
 
+
 nav ul li {
-display: inline-block;
+display:inline-block;
 line-height: 3rem;
 margin-top: 0.25rem;
 }
@@ -38,8 +47,6 @@ nav ul li a {
 a.active,a:hover {
   background: #252525;
   text-decoration:line-through white 0.2rem;
-  transform:rotate(50deg);
-  transition: 0,2s;
 }
 
 .h1 {
@@ -68,9 +75,7 @@ a.active,a:hover {
   animation: bounce 1.5s infinite;
   box-shadow:white ;
   cursor: pointer;
-
 }
-
 @keyframes bounce {
   0% {
     top: 0;
@@ -83,20 +88,31 @@ a.active,a:hover {
   }
 }
 
-.landingpage1 {
-background-color: #252525;
-height: 90vh;
+.project.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.h3text-section2 {
+#projects {
+  margin-top: 2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.line {
+  display: block;
+  width: 9rem;
+  border: none;
+  border-top: 0.2rem solid #252525;
+}
+/*.h3text-section2 {
   color: #252525;
   text-align: center;
   font-size: 1rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 50rem;
-  
-}
+  margin-top: 2rem;
+}*/
 
 
 
