@@ -42,12 +42,14 @@ nav ul li a {
   color: white;
   font-size: 14px;
   text-transform: uppercase;
+  
 }
 
 a.active,a:hover {
   background: #252525;
   text-decoration:line-through white 0.2rem;
 }
+
 
 .h1 {
   font-size: 2.5rem;
@@ -66,11 +68,10 @@ a.active,a:hover {
   margin-top: 1rem;
 }
 .pil {
-  display: inblock;
+  display:inline-block;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 11.2rem;
+  margin-left: 10rem;
+  margin-top: 9.8rem;
   width: 10%;
   animation: bounce 1.5s infinite;
   box-shadow:white ;
@@ -88,23 +89,75 @@ a.active,a:hover {
   }
 }
 
-.project.container {
-  display: flex;
-  flex-wrap: wrap;
+#h2-project {
+  font-size: 2rem;
+  margin-left: 0.9rem;
+  margin-top: 2rem;
+}
+.line {
+  display: block;
+  width: 11.5rem;
+  border: none;
+  border-top: 0.2rem solid #252525;
+  margin-left: 0.9rem;
 }
 
-#projects {
+.project-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.item {
+margin-bottom: 20px;
+}
+
+.project-container img {
+  width: 21rem;
+}
+
+.item h2 {
+  font-size: 1.3rem;
+}
+
+.item h3 {
+  font-size: 0.7rem;
+  text-decoration: underline solid black;
+}
+
+.item p1 {
+  font-size: 1rem;
+}
+
+
+
+#h2-profil {
+  font-size: 2rem;
+  margin-left: 0.5rem;
   margin-top: 2rem;
-  display: inline-block;
+  
+}
+.line2 {
+  display: block;
+  width: 8.4rem;
+  border: none;
+  border-top: 0.2rem solid #252525;
   margin-left: 0.5rem;
 }
 
-.line {
+/*Footer 
+.line3 {
   display: block;
-  width: 9rem;
+  width: 8.3rem;
   border: none;
   border-top: 0.2rem solid #252525;
 }
+*/
+
+
+
 /*.h3text-section2 {
   color: #252525;
   text-align: center;
