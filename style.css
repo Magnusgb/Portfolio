@@ -220,5 +220,12 @@ margin-left: 0.9rem;
 }
 
 .h2 {
-  font-size: 1.4rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  display: flex;
 }
+
+.h3 {
+margin-top: 1.5rem;
+}
+
