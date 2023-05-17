@@ -7,7 +7,7 @@ body {
 
 .landingpage1 {
   background-color:#252525;
-  height: 90vh;
+  height: 100vh;
   color: white;
   }
 
@@ -93,6 +93,7 @@ a.active,a:hover {
   font-size: 2rem;
   margin-left: 0.9rem;
   margin-top: 2rem;
+  
 }
 .line {
   display: block;
@@ -116,6 +117,8 @@ margin-bottom: 20px;
 
 .project-container img {
   width: 21rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 8px;
+  
 }
 
 .item h2 {
@@ -145,6 +148,10 @@ margin-bottom: 20px;
   border: none;
   border-top: 0.2rem solid #252525;
   margin-left: 0.5rem;
+}
+
+.profil-container img {
+  width:80%;
 }
 
 /*Footer 
