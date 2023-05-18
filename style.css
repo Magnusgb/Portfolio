@@ -283,12 +283,12 @@ align-self: center;
   flex-direction: column;
   align-self: flex-end;
   margin-right: 1rem;
-  margin-bottom: -1.25rem;
+  margin-bottom: -1rem;
   
 }
 #top {
   margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #kontakt-container button {
@@ -297,6 +297,17 @@ align-self: center;
   color: white;
   border: none;
   letter-spacing: 1px;
-  cursor: pointer;position: relative;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0.2rem;
 }
 
+#kontakt-container button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color:white;
+}
