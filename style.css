@@ -200,32 +200,103 @@ font-size: 1rem;
  margin-bottom: 1rem;
 }
 
-#kontakt {
+#kontakt-container {
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
+align-items: flex-start;
 margin-top: 2.5rem;
-margin-left: 0.9rem;
+background-color: #252525;
+color: white;
 }
 
+#pil-footer {
+  width: 4rem;
+  display:inline-block;
+}
+.kontakt-item{
+  display: flex;
+  align-items: center;
+  margin-top: -3.5rem;
+}
 
+.kontakt-item img {
+  display: block;
+  margin-top: 4rem;
+}
 .line3 {
   width: 11rem;
   border: none;
-  border-top: 0.2rem solid #252525;
+  border-top: 0.2rem solid white;
+  margin-left: 0.9rem;
 }
 
-.kontakt-container {
+.kontakt {
   font-size: 2rem;
+  margin-left: 0.9rem
 }
 
 .h2 {
-  margin-top: 2rem;
-  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
   display: flex;
+  margin-left: 0.9rem;
 }
 
 .h3 {
-margin-top: 1.5rem;
+margin-top: 0.5rem;
+margin-left:0.9rem ;
+}
+
+.bund-footer {
+font-size: 0.7rem;
+display: flex;
+align-self: center;
+  
+}
+
+.line4 {
+  width: 100%;
+  border: none;
+  border-top: 0.1rem solid white;
+}
+
+.some {
+  display: flex;
+  margin-top: -2rem;
+  margin-left: 1.2rem;
+}
+
+#mail {
+  margin-left: 2rem;
+  width: 2.5rem;
+}
+
+#mobil {
+  width: 1.35rem;
+  margin-left: 1rem;
+}
+
+.links-footer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: 1rem;
+  margin-bottom: -1.25rem;
+  
+}
+#top {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+#kontakt-container button {
+  font-size: 1rem;
+  background: none;
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;position: relative;
 }
 
