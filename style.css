@@ -1,9 +1,18 @@
-body {
-  font-family: Fagun, Sans-serif;
-  font-weight: 300;
-  background-color: #F5F0E6;
-  color: #252525;
+body  {
+font-family: fagun, sans-serif;
+font-weight: 300;
+font-style: normal;
+background-color: #F5F0E6;
+color: #252525;
 }
+
+body p{
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+
 
 *{
   padding: 0;
@@ -39,6 +48,9 @@ nav ul li a {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: fagun,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a.active,a:hover {
@@ -179,7 +191,12 @@ padding-bottom: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
 }
 
 .cv-knap {
@@ -192,6 +209,10 @@ border-width: 0.1rem;
 color: #252525;
 padding: 1rem 2rem 1rem 2rem;
 font-size: 1rem;
+font-family: fagun, sans-serif;
+font-weight: 300;
+font-style: normal;
+
 }
 
 .knap {
@@ -285,6 +306,7 @@ align-self: center;
   margin-right: 1rem;
   margin-bottom: -1rem;
   
+  
 }
 #top {
   margin-left: 1rem;
@@ -292,7 +314,7 @@ align-self: center;
 }
 
 #kontakt-container button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: none;
   color: white;
   border: none;
@@ -300,6 +322,9 @@ align-self: center;
   cursor: pointer;
   position: relative;
   margin-bottom: 0.2rem;
+  font-family: fagun, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #kontakt-container button::after {
@@ -310,4 +335,18 @@ align-self: center;
   width: 100%;
   height: 1px;
   background-color:white;
+}
+
+@media (min-width: 600px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    place-items: center;
+  }
+  img {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px; 
+  }
 }
