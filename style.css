@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 a.active,a:hover {
-  text-decoration:line-through #141414 0.2rem;
+  text-decoration:line-through #252525 0.2rem;
 }
 
 .h1 {
@@ -55,7 +55,8 @@ a.active,a:hover {
   font-size: 2.5rem;
 }
 #h2text-lpage {
-  font-size: 2rem;
+  margin-top: -0.2rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 
@@ -268,6 +269,11 @@ a.active,a:hover {
   position: relative;
   margin-bottom: 0.1rem;
   font-family: raleway, sans-serif;
+}
+
+#kontakt-container button:hover {
+  background-color: #252525;
+  color: #FAF8F5;
 }
 
 @media (min-width: 680px) {
