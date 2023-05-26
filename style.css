@@ -1,81 +1,75 @@
 body  {
-font-family: fagun, sans-serif;
-font-weight: 300;
-font-style: normal;
-background-color: #FAF8F5;
-color: #252525;
+  background-color: #FAF8F5;
+  color: #141414;
 }
 
-body p{
-font-family: neue-haas-grotesk-display, sans-serif;
-font-weight: 800;
-font-style: normal;
+h1,h2,h3 {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-*{
-  padding: 0;
-  margin: 0;
+p1 {
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0;
 }
-.landingpage1 {
-  background-color:#141414;
-  height: 100vh;
-  color: white;
-  }
 
 /* Nav bar*/
 .logo {
   width: 4rem;
-  margin-left: 0.7rem;
-  margin-top: 0.7rem;
+  margin-left: -1.8rem;
 }
 
 nav li {
-float: right;
-margin-right: 1rem;
+  float: right;
+  margin-right: 1rem;
 }
 
-
 nav ul li {
-display:inline-block;
-line-height: 3rem;
-margin-top: 0.25rem;
+  display:inline-block;
+  margin-top: 0.5rem;
 }
 
 nav ul li a {
-  color: white;
+  color: #141414;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: fagun,sans-serif;
-  font-weight: 400;
+  font-family: raleway,sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
 a.active,a:hover {
-  background: #252525;
-  text-decoration:line-through white 0.2rem;
+  text-decoration:line-through #141414 0.2rem;
 }
 
 .h1 {
-  margin-top: 3rem;
   font-size: 2.5rem;
   text-align: center;
 }
-
 #portfolio {
-  font-size: 3rem;
-  text-align: center;
+  margin-top: -2rem;
+  font-size: 2.5rem;
 }
-
 #h2text-lpage {
   font-size: 2rem;
   text-align: center;
-  margin-top: 1rem;
 }
-.pil {
+
+.forside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#pil {
   position: relative;
-  margin: auto;
-  margin-top: 13.5rem;
+  margin-top: 10rem;
   width: 10%;
   animation: bounce 1.5s infinite;
   box-shadow:white ;
@@ -97,6 +91,7 @@ a.active,a:hover {
   font-size: 2rem;
   margin-left: 1.3rem;
   margin-top: 3rem;
+  line-height: 0rem;
 }
 
 .line {
@@ -113,12 +108,12 @@ a.active,a:hover {
   flex-wrap:wrap;
   justify-content: space-evenly;
   margin-top: 2rem;
-  
 }
+
 .item {
-margin: auto;
-width: 90%;
-margin-bottom: 2rem;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 2rem;
 }
 
 .project-container img {
@@ -128,12 +123,14 @@ margin-bottom: 2rem;
 
 .item h2 {
   font-size: 1.3rem;
- margin-top: 0.5rem;
+  margin-top: 0.5rem;
+  line-height: 1rem;
 }
 
 .item h3 {
   font-size: 0.7rem;
   text-decoration: underline solid black;
+  line-height: 0rem;
 }
 
 .item p1 {
@@ -141,9 +138,10 @@ margin-bottom: 2rem;
 }
 
 #h2-profil {
-font-size: 2rem;
-margin-left: 1.31rem;
-margin-top: 2rem;
+  font-size: 2rem;
+  margin-left: 1.31rem;
+  margin-top: 2rem;
+  line-height: 0;
 }
 
 .line2 {
@@ -154,30 +152,18 @@ margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
+
 #profil img {
-max-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100%;
 }
-
 .profil-container {
-width: 90%;
-margin-right: auto;
-margin-left: auto;
-background: #252525;
-color: #ffffff;
-text-align:center;
-height: auto;
-}
-
-.profil-container h2 {
-  font-size: 2rem;
-}
-
-.profil-container h3 {
-  font-style:italic;
-  font-size: 0.8rem;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #252525;
+  color: #ffffff;
+  text-align:center;
+  height: auto;
 }
 
 .profil-container p1 {
@@ -187,55 +173,47 @@ height: auto;
   margin-left: 1rem;
   font-size: 1rem;
   line-height: 1.3rem;
-  font-family: neue-haas-grotesk-display, sans-serif;
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal ;
 }
 
 .cv-knap {
-cursor: pointer;
-margin-top: 1rem;
-background-color:#F5F0E6;
-border-color: #252525;
-border-style:solid;
-border-width: 0.1rem;
-color: #252525;
-padding: 1rem 2rem 1rem 2rem;
-font-size: 1rem;
-font-family: fagun, sans-serif;
-font-weight: 300;
-font-style: normal;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color:#FAF8F5;
+  border-color: #252525;
+  border-style:solid;
+  border-width: 0.1rem;
+  color: #252525;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  font-family: fagun, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cv-knap:hover {
+  background-color: #252525;
+  color: #FAF8F5;
 }
 
 .knap {
- text-align: center;
- margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 #kontakt-container {
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: flex-start;
-margin-top: 2.5rem;
-background-color: #252525;
-color: white;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+  background-color: #252525;
+  color: white;
 }
 
-#pil-footer {
-  width: 3rem;
-  display:block;
-}
-.kontakt-item{
-  display: flex;
-  align-items: center;
-  margin-top: -3.5rem;
-}
-
-.kontakt-item img {
-  margin-top: 4.5rem;
- 
-}
 .line3 {
-  width: 11.5rem;
+  width: 11rem;
   border: none;
   border-top: 2px solid white;
   margin-left: 1.3rem;
@@ -244,63 +222,44 @@ color: white;
 .kontakt {
   font-size: 2rem;
   margin-left: 1.3rem;
-  padding-top: 1rem;
-
+  line-height: 0;
 }
 
 .h2 {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  display: flex;
-  margin-left: 1.3rem;
-
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 0;
+  text-align: center;
 }
 
 .h3 {
-margin-top: 0.5rem;
-margin-left:1.3rem ;
-font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 0;
+  margin-right: 0.5rem;
+
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .bund-footer {
-font-size: 0.7rem;
-margin-top: 1rem;
-align-self: center;
-}
-
-
-.some {
-  display: flex;
-  margin-top: -2.5rem;
-}
-
-#mail {
-margin-left: 1.4rem;
-width: 2rem;
-}
-
-#mobil {
- width: 1.2rem;
-  margin-left: 1.3rem;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  align-self: center;
 }
 
 .links-footer {
-display: flex;
-flex-direction: column;
-margin-right: auto;
-margin-left: 1.3em;
-margin-top: 2rem;
-}
-
-
-.top {
-margin-left: auto;
-margin-right: 1.3rem;
-margin-top: -1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1rem;
 }
 
 #kontakt-container button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: none;
   color: white;
   border: none;
@@ -308,76 +267,65 @@ margin-top: -1.8rem;
   cursor: pointer;
   position: relative;
   margin-bottom: 0.1rem;
-  font-family: fagun, sans-serif;
-  text-align: left;
+  font-family: raleway, sans-serif;
 }
 
-#kontakt-container button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  width:100%;
-  height: 1px;
-  background-color:white;
-}
-
-@media (min-width: 600px) {
+@media (min-width: 680px) {
 
   .pil {
-    display: flex;
-   margin: auto;
-   margin-top:10rem ;
+  display: flex;
+  margin: auto;
+  margin-top:10rem ;
   }
   .project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    place-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-  .profil-container {
-    margin-top: 1rem;
-    width: 95vw;
-
-      
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  place-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   }
 }
 
 @media (min-width: 768px) {
 
-.profil-container img {
-width: 40%;
-object-fit: cover;
 
-
+#profil img {
+  width: 20rem;
+  object-fit: cover;
 }
-
 .profil-container {
   margin-top: 1rem;
-    width: 95vw;
-    height: auto;
-    display: flex;
-}
-.content h2 {
-  font-size: 3rem;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.content h3 {
-  font-size: 1rem;
 }
 
+@media (min-width: 993px) {
 
-
-
- 
+  .h1 {
+    font-size: 7rem;
+  }
   
-   
-    
-}
+  #portfolio {
+    font-size: 7rem;
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: -28rem;
+  }
+  
+  #h2text-lpage {
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 30rem;
+  }
+  }
