@@ -1,6 +1,7 @@
 body  {
   background-color: #FAF8F5;
   color: #252525;
+  margin: 0;
 }
 
 html {
@@ -22,7 +23,7 @@ p {
 /* Nav bar*/
 .logo {
   width: 4rem;
-  margin-right: -3rem;
+  margin-left: 1rem;
 }
 
 nav li {
@@ -93,9 +94,12 @@ li:hover {
 
 /* Projekter*/
 
+#projects{
+  margin-bottom: 8rem;
+}
 #h2-project {
   font-size: 2rem;
-  margin-left: 1.3rem;
+  margin-left: 1.6rem;
   margin-top: 3rem;
   line-height: 0rem;
 }
@@ -105,12 +109,11 @@ li:hover {
   width: 12.5rem;
   border: none;
   border-top: 2px solid #252525;
-  margin-left: 1.3rem;
+  margin-left: 1.6rem;
 }
 
 .project-container {
   display: flex;
-  width: 100%;
   flex-wrap:wrap;
   justify-content: space-evenly;
   margin-top: 1.2rem;
@@ -125,22 +128,47 @@ li:hover {
 .project-container img {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 8px;
+  margin-bottom: 0.5rem;
 }
 
 .item h2 {
   font-size: 1.3rem;
   margin-top: 0.5rem;
   line-height: 1rem;
+  margin-bottom:1.3rem;
 }
 
 .item h3 {
   font-size: 0.7rem;
   text-decoration: underline solid black;
   line-height: 0rem;
+  margin-bottom: 1.3rem;
 }
 
 .item p {
+  margin-bottom: 1.3rem;
   font-size: 1rem;
+}
+
+.button {
+  cursor: pointer;
+  border-color: #252525;
+  border-style:solid;
+  color: #252525;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  font-family: raleway, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+display: flex;
+justify-content: center;
+border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #252525;
+  color: #FAF8F5;
 }
 
 /* Profil*/
@@ -160,7 +188,6 @@ li:hover {
   margin-bottom: 1rem;
 }
 
-
 #profil img {
   width: 100%;
 }
@@ -169,7 +196,7 @@ li:hover {
   margin-right: auto;
   margin-left: auto;
   background: #252525;
-  color: #ffffff;
+  color:#FAF8F5;
   text-align:center;
   height: auto;
 }
@@ -181,6 +208,19 @@ li:hover {
   font-family: roboto, sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.info-profil {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 1rem;
+}
+.info-profil img {
+  width: 100%;
 }
 
 .cv-knap {
@@ -190,11 +230,16 @@ li:hover {
   color: #252525;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1rem;
-  font-family: fagun, sans-serif;
+  font-family: raleway, sans-serif;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
   margin-top: 1rem;
+  text-align: center;
+  border-radius: 25px;
+  width: 250px;
+  margin-bottom: 2rem;
+
 }
 
 .knap {
@@ -207,74 +252,80 @@ li:hover {
   color: #FAF8F5;
 }
 
-#kontakt-container {
+#kontakt{
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 4rem;
-  background-color: #252525;
-  color: white;
+ 
 }
-
 
 .kontakt {
   font-size: 2rem;
-  margin-left: 1.3rem;
+  margin-left: 1.8rem;
   line-height: 0;
 }
 
-.line3 {
+.linje {
   display: block;
-  width: 8.9rem;
-  border-top: 2px solid #ffffff;
-  margin-left: 1.3rem;
+  width: 10.8rem;
+  border-top: 2px solid #252525;
+  margin-left: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.h2 {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  line-height: 0;
+#footer {
+  background-color: #252525;
+  padding-bottom: 2rem;
+}
+
+.sm {
+  padding-top: 2rem;
+  color: #FAF8F5;
   text-align: center;
 }
-
-.h3 {
-  font-size: 1.3rem;
-  line-height: 0;
-  margin-right: 0.5rem;
-
-}
-
-.mail {
+.ikoner {
+  padding-top: 1.5rem;
+  padding-bottom:1.5rem ;
   display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
- 
+  justify-content: space-evenly;
 }
 
 .bund-footer {
   font-size: 0.7rem;
-  margin-top: 1rem;
-  align-self: center;
+  text-align: center;
+  color: #FAF8F5;
+  margin-bottom: -1.5rem;
 }
 
-.links-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 1rem;
+.kontakt-info {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-#kontakt-container span {
+.mobil {
+  text-align: center;
+}
+.mobil img {
+  width: 70px;
+}
+
+.mail {
+  text-align: center;
+}
+.mail img {
+  width: 70px;
+}
+
+.kontakt-info h3 {
   font-size: 1rem;
-  background: none;
-  color: white;
-  border: none;
-  letter-spacing: 1px;
-  cursor: pointer;
-  position: relative;
-  margin-bottom: 0.1rem;
-  font-family: raleway, sans-serif;
+}
+
+.kontakt-sektion {
+  border: 2px solid #252525;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 8rem;
 }
 
 @media (min-width: 680px) {
@@ -292,11 +343,24 @@ li:hover {
   margin-top: 3rem;
   margin-bottom: 3rem;
   }
-  
+
+  .info-profil {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    place-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-around;
+      
+    }
 }
 
 @media (min-width: 768px) {
-
 
 #profil img {
   width: 20rem;
@@ -315,6 +379,14 @@ li:hover {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.info-profil {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  margin-left: 0.7rem;
+}
+
 }
 
 @media (min-width: 993px) {
@@ -340,4 +412,38 @@ li:hover {
   .h2 {
     font-size: 2rem;
   }
+
+  .project-container {
+    margin-top: 1rem;
+  }
+
+#h2-project {
+  margin-left: 2.2rem;
+}
+
+.line {
+  margin-left: 2.2rem;
+}
+#h2-profil {
+  margin-left: 2.3rem;
+}
+
+.line2 {
+  margin-left: 2.3rem;
+}
+
+.info-profil {
+  display: flex;
+  flex-direction: row;
+  width: 47.7%;
+  margin-left: 1.7rem;
+}
+.knap {
+  margin-top: -1.5rem;
+}
+
+.kontakt-sektion {
+  width: 96%;
+}
+
   }
